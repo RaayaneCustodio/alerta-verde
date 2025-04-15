@@ -13,3 +13,7 @@ h3 {
 p {
     font: 500 1.125rem/1.35 "Inter", sans-serif;
 }
+
+a {
+    font: 400 0.875rem/1.5 "Inter", sans-serif;
+}
