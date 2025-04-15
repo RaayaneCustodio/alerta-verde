@@ -14,13 +14,13 @@ display: flex;
     gap: 20px;
 }
 
-.header-menu li {
+.header-menu a {
     background-color: var(--cor-6);
     padding: 10px 20px;
     border-radius: 5px;
 }
 
-.header-menu li:hover {
+.header-menu a:hover {
     background-color: var(--cor-4);
     color: var(--cor-6);
 }
