@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="img/login e cadastro/voltar.svg" alt="voltar">Voltar para a Home</a>
+            <a href="index.html"><img src="img/login e cadastro/voltar.svg" alt="Voltar">Voltar para a Home</a>
         </nav>
     </header>
     <main>
         <section>
             <div>
                 <h1>Entre no Alerta Verde</h1>
-                <p>Insira suas credenciais para acessar sua conta</p>
+                <p>Insira suas credenciais para acessar sua conta.</p>
                 <form>
                     <div>
-                        <label for="email">Email</label>
+                        <label for="email">E-mail</label>
                         <input type="email" name="email" id="email" placeholder="E-mail">
                     </div>
                     <div>
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" id="senha" placeholder="Senha">
                     </div>
+                    <div>
+                        <p>Tipo de conta:</p>
+                        <label><input type="radio" name="tipoConta" value="cidadao"> Cidadão</label>
+                        <label><input type="radio" name="tipoConta" value="agencia"> Órgão ou Agência</label>
+                    </div>
                     <button type="submit">Entrar</button>
+                    <p>Não tem uma conta?<a href="cadastroCidadao.html"> Registre-se</a></p>
                 </form>
             </div>
         </section>
     </main>
 </body>
+
 </html>
