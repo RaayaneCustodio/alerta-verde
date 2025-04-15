@@ -1,0 +1,26 @@
+.introducao {
+    margin-top: 3px;
+    background: linear-gradient(to bottom, #183A37, #3F7E44);
+    padding: 50px;
+    color: var(--cor-6);
+    text-align: center;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.introducao p {
+    color: var(--cor-7);
+    line-height: 1.5rem;
+}
+
+.btt-denuncie {
+    background-color: var(--cor-6);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
