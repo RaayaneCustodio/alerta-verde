@@ -2,39 +2,58 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login • Alerta Verde</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html"><img src="img/login e cadastro/voltar.svg" alt="Voltar">Voltar para a Home</a>
-        </nav>
+        <div class="menu-login">
+            <a href="index.html" class="voltar-link">
+                <img src="img/login e cadastro/voltar.svg" alt="Voltar" class="voltar-icon" />
+                Voltar para a Home
+            </a>
+        </div>
     </header>
-    <main>
-        <section>
-            <div>
-                <h1>Entre no Alerta Verde</h1>
-                <p>Insira suas credenciais para acessar sua conta.</p>
-                <form>
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="E-mail">
+
+    <main class="login-bg">
+        <section class="login-container">
+            <div class="formulario-box">
+                <div class="formulario-header">
+                    <h1 class="formulario-titulo">Entre no Alerta Verde</h1>
+                    <p class="formulario-subtitulo">Insira suas credenciais para acessar sua conta.</p>
+                </div>
+
+
+                <form class="formulario">
+                    <div class="formulario-campo">
+                        <label for="email" class="formulario-label">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" class="formulario-input" />
                     </div>
-                    <div>
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
+
+                    <div class="formulario-campo">
+                        <label for="senha" class="formulario-label">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha" class="formulario-input" />
                     </div>
-                    <div>
-                        <p>Tipo de conta:</p>
-                        <label><input type="radio" name="tipoConta" value="cidadao"> Cidadão</label>
-                        <label><input type="radio" name="tipoConta" value="agencia"> Órgão ou Agência</label>
+
+                    <div class="formulario-campo">
+                        <p class="formulario-label">Tipo de conta:</p>
+                        <label class="formulario-radio">
+                            <input type="radio" name="tipoConta" value="cidadao" /> Cidadão
+                        </label>
+                        <label class="formulario-radio">
+                            <input type="radio" name="tipoConta" value="agencia" /> Órgão ou Agência
+                        </label>
                     </div>
-                    <button type="submit">Entrar</button>
-                    <p>Não tem uma conta?<a href="cadastroCidadao.html"> Registre-se</a></p>
+
+                    <button type="submit" class="formulario-botao">Entrar</button>
+
+                    <p class="formulario-link-texto">
+                        Não tem uma conta?
+                        <a href="cadastroCidadao.html" class="formulario-link">Registre-se</a>
+                    </p>
                 </form>
             </div>
         </section>

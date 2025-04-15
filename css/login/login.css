@@ -1,0 +1,108 @@
+/* Link de login */
+.menu-login a {
+    display: flex;
+    gap: 10px;
+    color: var(--cor-6);
+}
+
+/* Tela de fundo da área de login */
+.login-bg {
+    min-height: 100vh;
+    margin-top: 3px;
+    background-color: var(--cor-2);
+    padding: 70px;
+    color: var(--cor-6);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caixa do formulário */
+.formulario-box {
+    width: 448px;
+    height: 456px;
+    border: 2px solid;
+    background-color: var(--cor-1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+/* Título do formulário */
+.formulario-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+/* Subtítulo do formulário */
+.formulario-subtitulo {
+    font-size: 14px;
+    color: #dcdcdc;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Campo do formulário */
+.formulario-campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+/* Input do formulário */
+.formulario-input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+}
+
+/* Estilização de radio buttons */
+.formulario-radio {
+    margin-right: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botão do formulário */
+.formulario-botao {
+    background-color: var(--cor-4);
+    color: var(--cor-6);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.formulario-botao:hover {
+    background-color: var(--cor-6);
+}
+
+/* Texto com link */
+.formulario-link-texto {
+    font-size: small;
+}
+
+/* Hover no link */
+.formulario-link-texto:hover a {
+    background-color: var(--cor-6);
+}
