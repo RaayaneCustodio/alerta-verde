@@ -1,0 +1,42 @@
+/* Global */
+
+@import 'css/global/footer.css';
+@import 'css/global/global.css';
+@import 'css/global/header-admin.css';
+@import 'css/global/header-cidadao.css';
+@import 'css/global/header-home.css';
+@import 'css/global/header-orgao.css';
+@import 'css/global/tipografia.css';
+
+/* Utilidades */
+
+@import 'css/utilidades/componentes.css';
+@import 'css/utilidades/cores.css';
+@import 'css/utilidades/tipografia.css';
+
+/* Home */
+
+@import 'css/home/comunidade.css';
+@import 'css/home/funciona.css';
+@import 'css/home/introducao.css';
+
+/* Login */
+
+@import 'css/login/login.css';
+
+/* Cadastro */ 
+
+@import 'css/cadastro/cadastro.css;
+
+/* Admin */
+
+
+
+/* Cidadão */
+
+
+
+/* Órgão */
+
+
+ 
