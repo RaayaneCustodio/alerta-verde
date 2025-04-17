@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu-login">
+    <header class="menu-login">
+        <div >
             <a href="index.html" class="voltar-link">
                 <img src="img/login e cadastro/voltar.svg" alt="Voltar" class="voltar-icon" />
                 Voltar para a Home
@@ -40,13 +40,15 @@
 
                     <div class="formulario-campo">
                         <p class="formulario-label">Tipo de conta:</p>
-                        <label class="formulario-radio">
+                        <div class="formulario-radio-group">
+                          <label class="formulario-radio">
                             <input type="radio" name="tipoConta" value="cidadao" /> Cidadão
-                        </label>
-                        <label class="formulario-radio">
+                          </label>
+                          <label class="formulario-radio">
                             <input type="radio" name="tipoConta" value="agencia" /> Órgão ou Agência
-                        </label>
-                    </div>
+                          </label>
+                        </div>
+                      </div>
 
                     <button type="submit" class="formulario-botao">Entrar</button>
 

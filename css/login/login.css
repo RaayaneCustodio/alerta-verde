@@ -1,108 +1,149 @@
-/* Link de login */
-.menu-login a {
-    display: flex;
-    gap: 10px;
-    color: var(--cor-6);
-}
 
-/* Tela de fundo da área de login */
-.login-bg {
-    min-height: 100vh;
-    margin-top: 3px;
+.menu-login {
     background-color: var(--cor-2);
-    padding: 70px;
-    color: var(--cor-6);
-    text-align: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .voltar-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-0);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .voltar-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+
+  .login-bg {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    padding: 4rem 1rem;
+    min-height: 100vh;
+    background-color: var(--cor-2);
+  }
+  
 
-/* Caixa do formulário */
-.formulario-box {
-    width: 448px;
-    height: 456px;
-    border: 2px solid;
+  .login-container {
+    width: 100%;
+    max-width: 420px;
     background-color: var(--cor-1);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    gap: 20px;
-    border-radius: 10px;
-}
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
 
-/* Título do formulário */
-.formulario-titulo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 4px;
-    text-align: center;
-}
-
-/* Subtítulo do formulário */
-.formulario-subtitulo {
-    font-size: 14px;
-    color: #dcdcdc;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-/* Campo do formulário */
-.formulario-campo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 16px;
-}
-
-/* Input do formulário */
-.formulario-input {
+  .formulario-box {
     width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 10px 14px;
-    border: none;
-    border-radius: 6px;
-    background-color: #f1f1f1;
-    font-size: 14px;
-}
+  }
+  
 
-/* Estilização de radio buttons */
-.formulario-radio {
-    margin-right: 20px;
-    font-size: 14px;
+  .formulario-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .formulario-titulo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--cor-6);
+  }
+  
+  .formulario-subtitulo {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  .formulario-campo {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formulario-label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--cor-6);
+  }
+  
+  .formulario-input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formulario-input:focus {
+    outline: none;
+    border-color: #10b981;
+  }
+  
+
+  .formulario-radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+
+  .formulario-radio {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-/* Botão do formulário */
-.formulario-botao {
-    background-color: var(--cor-4);
+    font-size: 1rem;
     color: var(--cor-6);
-    border: none;
-    border-radius: 6px;
-    padding: 12px 0;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
+  }
+  
+ 
+  .formulario-radio input[type="radio"] {
+    margin-right: 0.5rem;
+    accent-color: var(--cor-4);
+  }
+  
+
+  .formulario-botao {
     width: 100%;
-    transition: background-color 0.3s;
-}
+    padding: 0.75rem;
+    background-color: var(--cor-4);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario-botao:hover {
+    background-color: var(--cor-5);
+  }
+  
 
-.formulario-botao:hover {
-    background-color: var(--cor-6);
-}
-
-/* Texto com link */
-.formulario-link-texto {
-    font-size: small;
-}
-
-/* Hover no link */
-.formulario-link-texto:hover a {
-    background-color: var(--cor-6);
-}
+  .formulario-link-texto {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #6b7280;
+  }
+  
+  .formulario-link {
+    color: var(--cor-4);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .formulario-link:hover {
+    text-decoration: underline;
+  }
+  
