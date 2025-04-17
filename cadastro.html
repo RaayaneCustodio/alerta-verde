@@ -2,53 +2,84 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cadastro do Cidadão</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro • Alerta Verde</title>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="img/login e cadastro/voltar.svg" alt="Voltar">Voltar para a Home</a>
-        </nav>
+<body class="login-bg">
+    <header class="menu-login">
+        <div>
+            <a href="index.html" class="voltar-link">
+                <img src="img/login e cadastro/voltar.svg" alt="Voltar" class="voltar-icon" />
+                Voltar para a Home
+            </a>
+        </div>
     </header>
-    <main>
-        <section>
-            <div>
-                <h1>Crie sua conta</h1>
-                <p>Cadastre-se para começar a relatar problemas na sua comunidade.</p>
-                <form>
-                    <div>
-                        <p>Tipo de conta</p>
-                        <label><input type="radio" name="tipoConta" value="cidadao"> Cidadão</label>
-                        <label><input type="radio" name="tipoConta" value="agencia"> Órgão ou Agência</label>
-                    </div>
-                    <div>
-                        <label for="nome">Nome</label>
-                        <input type="text" name="name" id="nome" placeholder="nome">
-                    </div>
-                    <div>
-                        <label for="sobrenome">Sobrenome</label>
-                        <input type="text" name="name" id="sobrenome" placeholder="sobrenome">
-                    </div>
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                    </div>
-                    <div>
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
-                    </div>
-                    <div>
-                        <label for="senha">Confirmar Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Corfirmar Senha">
-                    </div>
-                    <button type="submit">Entrar</button>
-                    <p>Já tem uma conta ?<a href="login.html"> Entre aqui</a></p>
-                </form>
+    <main class="login-container">
+        <section class="formulario-box">
+            <div class="formulario-header">
+                <h1 class="formulario-titulo">Crie sua conta</h1>
+                <p class="formulario-subtitulo">Cadastre-se para começar a relatar problemas na sua comunidade.</p>
             </div>
+
+            <form class="formulario">
+                <!-- Tipo de Conta -->
+                <div class="formulario-campo">
+                    <label class="formulario-label">Tipo de Conta</label>
+                    <div class="formulario-radio-group">
+                        <label class="formulario-radio">
+                            <input type="radio" name="tipoConta" value="cidadao" checked /> Cidadão
+                        </label>
+                        <label class="formulario-radio">
+                            <input type="radio" name="tipoConta" value="agencia" /> Órgão ou Agência
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Nome e Sobrenome -->
+                <div class="formulario-campo form-duplo">
+                    <div class="form-metade">
+                        <label for="nome" class="formulario-label">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" class="formulario-input" />
+                    </div>
+                    <div class="form-metade">
+                        <label for="sobrenome" class="formulario-label">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome"
+                            class="formulario-input" />
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="formulario-campo">
+                    <label for="email" class="formulario-label">Email</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com"
+                        class="formulario-input" />
+                </div>
+
+                <!-- Senha -->
+                <div class="formulario-campo">
+                    <label for="senha" class="formulario-label">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" class="formulario-input" />
+                </div>
+
+                <!-- Confirmar Senha -->
+                <div class="formulario-campo">
+                    <label for="confirmarSenha" class="formulario-label">Confirmar Senha</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar senha"
+                        class="formulario-input" />
+                </div>
+
+                <!-- Botão de cadastro -->
+                <button type="submit" class="formulario-botao">Criar conta</button>
+
+                <!-- Link para login -->
+                <p class="formulario-link-texto">
+                    Já tem uma conta?
+                    <a href="login.html" class="formulario-link">Entre aqui</a>
+                </p>
+            </form>
         </section>
     </main>
 </body>
