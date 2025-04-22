@@ -1,8 +1,15 @@
 .form-duplo {
-    display: flex;
-    gap: 1rem; /* espaço entre os dois campos */
-  }
-  
-  .form-metade {
-    flex: 1;
-  }
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; 
+}
+
+.form-metade {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-duplo .formulario-input {
+  width: 90%; /* garante que o input ocupe toda a metade */
+}
+
