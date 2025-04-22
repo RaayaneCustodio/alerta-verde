@@ -17,6 +17,7 @@
             </a>
         </div>
     </header>
+
     <main class="login-container">
         <section class="formulario-box">
             <div class="formulario-header">
@@ -38,16 +39,36 @@
                     </div>
                 </div>
 
-                <!-- Nome e Sobrenome -->
-                <div class="formulario-campo form-duplo">
-                    <div class="form-metade">
-                        <label for="nome" class="formulario-label">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Nome" class="formulario-input" />
+                <!-- Campos para Cidadão -->
+                <div id="camposCidadao">
+                    <div class="formulario-campo form-duplo">
+                        <div class="form-metade">
+                            <label for="nome" class="formulario-label">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome" class="formulario-input" />
+                        </div>
+                        <div class="form-metade">
+                            <label for="sobrenome" class="formulario-label">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome"
+                                class="formulario-input" />
+                        </div>
                     </div>
-                    <div class="form-metade">
-                        <label for="sobrenome" class="formulario-label">Sobrenome</label>
-                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome"
+                </div>
+
+                <!-- Campos para Órgão ou Agência -->
+                <div id="camposOrgao" style="display: none;">
+                    <div class="formulario-campo">
+                        <label for="nomeOrgao" class="formulario-label">Nome do Órgão/Agência</label>
+                        <input type="text" id="nomeOrgao" name="nomeOrgao" placeholder="Nome do órgão"
                             class="formulario-input" />
+                    </div>
+                    <div class="formulario-campo">
+                        <label for="tipoOrgao" class="formulario-label">Tipo de órgão</label>
+                        <select id="tipoOrgao" name="tipoOrgao" class="formulario-input">
+                            <option value="">Selecione</option>
+                            <option value="municipal">Municipal</option>
+                            <option value="estadual">Estadual</option>
+                            <option value="federal">Federal</option>
+                        </select>
                     </div>
                 </div>
 
@@ -82,6 +103,32 @@
             </form>
         </section>
     </main>
+
+    <!-- JavaScript para exibir/ocultar campos -->
+    <script>
+        const radioCidadao = document.querySelector('input[value="cidadao"]');
+        const radioOrgao = document.querySelector('input[value="agencia"]');
+
+        const camposCidadao = document.getElementById('camposCidadao');
+        const camposOrgao = document.getElementById('camposOrgao');
+
+        function atualizarCampos() {
+            if (radioCidadao.checked) {
+                camposCidadao.style.display = 'block';
+                camposOrgao.style.display = 'none';
+            } else {
+                camposCidadao.style.display = 'none';
+                camposOrgao.style.display = 'block';
+            }
+        }
+
+        // Inicialização
+        atualizarCampos();
+
+        // Eventos
+        radioCidadao.addEventListener('change', atualizarCampos);
+        radioOrgao.addEventListener('change', atualizarCampos);
+    </script>
 </body>
 
 </html>
