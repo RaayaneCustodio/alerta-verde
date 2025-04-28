@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel do Cidadão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-container">
+        <a href="./">
+            <img class="logo" src="img/alerta_verde_horizontal.png" alt="Alerta Verde" width="136" height="26">
+        </a>
+    </div>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Painel do Cidadão</h2>
+      <nav>
+        <ul>
+          <li>Minhas Denúncias</li>
+          <li>Perfil</li>
+          <li>Configurações</li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <button class="new-report-btn">+ Nova denúncia</button>
+      </header>
+      
+      <div class="search-filter">
+        <input type="text" placeholder="Procurar denúncia...">
+        <button class="filter-btn">Filtro</button>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active">Ativas</button>
+        <button class="tab">Resolvidas</button>
+        <button class="tab">Todas</button>
+      </div>
+
+      <section class="reports">
+        <div class="report-card in-progress">
+          <h3>Visualização de árvore caída.</h3>
+          <p>Pedido no estacionamento principal da UFPR, há uma árvore caída.</p>
+          <span>📍 R. Doutor Washington Subtil Chueire, 330 - UFPR</span> | <span>2 dias atrás</span>
+          <button class="details-btn">Ver detalhes</button>
+          <span class="status">Em progresso</span>
+        </div>
+
+        <div class="report-card pending">
+          <h3>Poste de iluminação quebrado</h3>
+          <p>A iluminação do poste está quebrada há mais de uma semana, gerando preocupação com a segurança.</p>
+          <span>📍 Avenida Doutor Vicente Machado, 100</span> | <span>1 semana atrás</span>
+          <button class="details-btn">Ver detalhes</button>
+          <span class="status">Pendente</span>
+        </div>
+
+        <div class="report-card inactive">
+          <h3>Descarte inapropriado de lixo</h3>
+          <p>Materiais de construção e resíduos diversos descartados ilegalmente.</p>
+          <span>📍 Rua Coronel Dulcídio, 620</span> | <span>3 dias atrás</span>
+          <button class="details-btn">Ver detalhes</button>
+          <span class="status">Inativo</span>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

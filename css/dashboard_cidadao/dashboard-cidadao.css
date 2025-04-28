@@ -1,0 +1,121 @@
+/* Base Geral */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: var(--cor-1);
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background: var(--cor-1);
+    width: 250px;
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .sidebar nav ul li.active,
+  .sidebar nav ul li:hover {
+    background: var(--cor-4);
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background: var(--cor-1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .new-report-btn {
+    background: var(--cor-4);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Pesquisa e Filtro */
+  .search-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-filter input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .filter-btn {
+    background: var(--cor-4);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    background: #0E3C34;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background: var(--cor-4);
+  }
+  
+  /* Reports */
+  .reports {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .report-card {
+    background: var(--cor-2);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  
