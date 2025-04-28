@@ -39,7 +39,6 @@
                     </div>
                 </div>
 
-                <!-- Campos para Cidadão -->
                 <div id="camposCidadao">
                     <div class="formulario-campo form-duplo">
                         <div class="form-metade">
@@ -53,8 +52,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Campos para Órgão ou Agência -->
                 <div id="camposOrgao" style="display: none;">
                     <div class="formulario-campo">
                         <label for="nomeOrgao" class="formulario-label">Nome do Órgão/Agência</label>
@@ -71,31 +68,21 @@
                         </select>
                     </div>
                 </div>
-
-                <!-- Email -->
                 <div class="formulario-campo">
                     <label for="email" class="formulario-label">Email</label>
                     <input type="email" id="email" name="email" placeholder="name@example.com"
                         class="formulario-input" />
                 </div>
-
-                <!-- Senha -->
                 <div class="formulario-campo">
                     <label for="senha" class="formulario-label">Senha</label>
                     <input type="password" id="senha" name="senha" placeholder="Senha" class="formulario-input" />
                 </div>
-
-                <!-- Confirmar Senha -->
                 <div class="formulario-campo">
                     <label for="confirmarSenha" class="formulario-label">Confirmar Senha</label>
                     <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar senha"
                         class="formulario-input" />
                 </div>
-
-                <!-- Botão de cadastro -->
                 <button type="submit" class="formulario-botao">Criar conta</button>
-
-                <!-- Link para login -->
                 <p class="formulario-link-texto">
                     Já tem uma conta?
                     <a href="login.html" class="formulario-link">Entre aqui</a>
@@ -103,8 +90,6 @@
             </form>
         </section>
     </main>
-
-    <!-- JavaScript para exibir/ocultar campos -->
     <script>
         const radioCidadao = document.querySelector('input[value="cidadao"]');
         const radioOrgao = document.querySelector('input[value="agencia"]');
@@ -122,10 +107,9 @@
             }
         }
 
-        // Inicialização
+
         atualizarCampos();
 
-        // Eventos
         radioCidadao.addEventListener('change', atualizarCampos);
         radioOrgao.addEventListener('change', atualizarCampos);
     </script>
