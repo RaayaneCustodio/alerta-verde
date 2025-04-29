@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel da Agência - CivicWatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>CivicWatch</h2>
+      <nav aria-label="Menu">
+        <ul>
+          <li><a href="/dashboard/agency/reports" class="active">Denúncias</a></li>
+          <li><a href="/dashboard/agency/profile">Perfil</a></li>
+          <li><a href="/dashboard/agency/settings">Configurações</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Header -->
+    <header class="header-container">
+      <h1>Painel da Agência</h1>
+      <div class="header-actions">
+        <button title="Notificações">🔔</button>
+        <button title="Configurações">⚙️</button>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+
+      <!-- Métricas Rápidas (4 cards) -->
+      <div class="metrics">
+        <div class="metric-card">
+          <h2>1.240</h2>
+          <p>Total de denúncias</p>
+        </div>
+        <div class="metric-card">
+          <h2>842</h2>
+          <p>Em análise</p>
+        </div>
+        <div class="metric-card">
+          <h2>398</h2>
+          <p>Respondidas</p>
+        </div>
+        <div class="metric-card">
+          <h2>156</h2>
+          <p>Avaliações</p>
+        </div>
+      </div>
+
+      <!-- Gráficos -->
+      <div class="charts">
+        <div class="chart-box">
+          <h3>Distribuição de Categorias</h3>
+          <canvas id="pieChart" height="200"></canvas>
+        </div>
+        <div class="chart-box">
+          <h3>Denúncias por Mês</h3>
+          <canvas id="barChart" height="200"></canvas>
+        </div>
+      </div>
+
+      <!-- Tabela de Denúncias Recentes -->
+      <section class="table-section">
+        <h3>Denúncias Recentes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Título</th>
+              <th>Categoria</th>
+              <th>Data</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#10567</td>
+              <td>Buraco na Av. Central</td>
+              <td>Infraestrutura</td>
+              <td>15/04/2025</td>
+              <td class="status-pendente">Pendente</td>
+            </tr>
+            <tr>
+              <td>#10566</td>
+              <td>Lixo Acumulado</td>
+              <td>Meio Ambiente</td>
+              <td>14/04/2025</td>
+              <td class="status-resolvido">Resolvido</td>
+            </tr>
+            <tr>
+              <td>#10565</td>
+              <td>Falta de Iluminação</td>
+              <td>Segurança</td>
+              <td>13/04/2025</td>
+              <td class="status-negado">Negado</td>
+            </tr>
+            <tr>
+              <td>#10564</td>
+              <td>Ônibus Quebrado</td>
+              <td>Transporte</td>
+              <td>12/04/2025</td>
+              <td class="status-pendente">Pendente</td>
+            </tr>
+            <tr>
+              <td>#10563</td>
+              <td>Vazamento de Água</td>
+              <td>Infraestrutura</td>
+              <td>11/04/2025</td>
+              <td class="status-resolvido">Resolvido</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Se usar Chart.js, importe e inicialize os gráficos abaixo -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Exemplo de inicialização:
+    const pieCtx = document.getElementById('pieChart').getContext('2d');
+    new Chart(pieCtx, { type: 'pie', data: { labels: [...], datasets:[{ data:[...], backgroundColor:[...] }] } });
+    const barCtx = document.getElementById('barChart').getContext('2d');
+    new Chart(barCtx, { type: 'bar', data: { labels: [...], datasets:[{ label:'Denúncias', data:[...], backgroundColor:[...] }] } });
+  </script>
+  -->
+</body>
+</html>

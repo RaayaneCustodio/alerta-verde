@@ -34,9 +34,12 @@
 
 /* Cidadão */
 @import 'css/dashboard_cidadao/dashboard-cidadao.css';
-@import 'css/dashboard_cidadao/nova-denuncia.css'
+@import 'css/dashboard_cidadao/nova-denuncia.css';
 
 /* Órgão */
+@import 'css/dashboard_empresa/dashboard-empresa.css'
+
+
 
 
  
