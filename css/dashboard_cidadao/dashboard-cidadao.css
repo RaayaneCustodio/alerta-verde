@@ -66,14 +66,13 @@
 
   .main-content h1 {
     font-size: 24px;
-    margin-bottom: 20px;
     color: var(--cor-6);
   }
 
   .header {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    margin: 20px 0px;
   }
 
   .new-report-btn {

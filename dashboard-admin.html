@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Painel do Administrador</h2>
+        <h3>Administrador</h3>
+        <nav>
+          <ul>
+            <li class="sidebar-menu-item">
+              <a href="">Denúncias</a>
+            </li>
+            <li class="sidebar-menu-item">
+              <a href="">Usuários</a>
+            </li>
+            <li class="sidebar-menu-item">
+              <a href="">Perfil</a>
+            </li>
+            <li class="sidebar-menu-item">
+              <a href="">Configurações</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <h1 class="titulo">Painel Administrativo</h1>
+        <p class="descricao">Gerencie denúncias, usuários e empresas</p>
+        <section class="analise">
+          <div class="card-analise">
+            <div class="titulo-analise">
+              <h3>Empresas ativas</h3>
+              <svg class="icon" data-lucide="chart-column"></svg>
+            </div>
+            <p class="valores">128</p>
+            <p class="analise-texto">+3% em relação ao mês anterior</p>
+          </div>
+          <div class="card-analise">
+            <div class="titulo-analise">
+              <h3>Usuários Cadastrados</h3>
+              <svg class="icon" data-lucide="chart-column"></svg>
+            </div>
+            <p class="valores">5,672</p>
+            <p class="analise-texto">+8% em relação ao mês anterior</p>
+          </div>
+          <div class="card-analise">
+            <div class="titulo-analise">
+              <h3>Denúncias Pendentes</h3>
+              <svg class="icon" data-lucide="chart-column"></svg>
+            </div>
+            <p class="valores">342</p>
+            <p class="analise-texto">+4% em relação ao mês anterior</p>
+          </div>
+          <div class="card-analise">
+            <div class="titulo-analise">
+              <h3>Total de Denúncias</h3>
+              <svg class="icon" data-lucide="chart-column"></svg>
+            </div>
+            <p class="valores">1,248</p>
+            <p class="analise-texto">+12% em relação ao mês anterior</p>
+          </div> 
+        </section>
+        <section class="denuncias-recentes">
+                <div class="topo">
+                  <div>
+                    <h2>Denúncias Recentes</h2>
+                    <p>Gerencie e responda às denúncias dos cidadãos</p>
+                  </div>
+                  <div class="actions">
+                    <input type="text" placeholder="Buscar denúncias..." />
+                    <button class="filter-btn">
+                        <svg class="icon" data-lucide="funnel"></svg>
+                        Filtrar</button>
+                  </div>
+                </div>
+            
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Autor</th>
+                      <th>Tipo</th>
+                      <th>Status</th>
+                      <th>Data</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>D-1001</strong></td>
+                      <td>João Silva</td>
+                      <td>Poluição Sonora</td>
+                      <td><span class="badge pending">Pendente</span></td>
+                      <td>2023-04-01</td>
+                    </tr>
+                    <tr>
+                      <td><strong>D-1002</strong></td>
+                      <td>Maria Oliveira</td>
+                      <td>Descarte Irregular</td>
+                      <td><span class="badge analysis">Em Análise</span></td>
+                      <td>2023-04-02</td>
+                    </tr>
+                    <tr>
+                      <td><strong>D-1003</strong></td>
+                      <td>Carlos Santos</td>
+                      <td>Construção Irregular</td>
+                      <td><span class="badge progress">Em Progresso</span></td>
+                      <td>2023-04-03</td>
+                    </tr>
+                    <tr>
+                      <td><strong>D-1004</strong></td>
+                      <td>Ana Pereira</td>
+                      <td>Poluição Ambiental</td>
+                      <td><span class="badge resolved">Resolvida</span></td>
+                      <td>2023-04-04</td>
+                    </tr>
+                    <tr>
+                      <td><strong>D-1005</strong></td>
+                      <td>Roberta Costa</td>
+                      <td>Maus-tratos a Animais</td>
+                      <td><span class="badge archived">Arquivada</span></td>
+                      <td>2023-04-05</td>
+                    </tr>
+                    <tr>
+                      <td><strong>D-1006</strong></td>
+                      <td>Fernanda Lima</td>
+                      <td>Calçada Danificada</td>
+                      <td><span class="badge pending">Pendente</span></td>
+                      <td>2023-04-06</td>
+                    </tr>
+                    <tr>
+                      <td><strong>D-1007</strong></td>
+                      <td>Paulo Mendes</td>
+                      <td>Iluminação Pública</td>
+                      <td><span class="badge progress">Em Progresso</span></td>
+                      <td>2023-04-07</td>
+                    </tr>
+                  </tbody>
+                </table>
+        </section>
+      </main>
+    </div>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
