@@ -1,190 +1,72 @@
+.bg-principal {
+  background-color: var(--cor-1);
+  /* border-bottom: 1px solid white; */
+}
 
- 
-  body {
-    background-color: var(--cor-1);
-    color: white;
-  }
+.bg-nome{
 
-  .header-container {
-    background-color: var(--cor-2);
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
+  border-bottom: 1px solid white;
+}
 
-  .logo {
-    height: 26px;
-  }
+.bg-menu{
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
 
-  .container {
-    display: flex;
-    min-height: 100vh;
-  }
 
-  aside.sidebar {
-    width: 250px;
-    background-color: var(--cor-1);
-    color: white;
-    padding: 20px;
-  }
+.bg-secundaria {
+  background-color: var(--cor-2) !important;
+  border-right: 1px solid white;
+}
 
-  .sidebar h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
+.bg-destaque {
+  background-color: var(--cor-3) !important;
+}
 
-  .sidebar h3 {
-    font-size: 14px;
-    margin-bottom: 20px;
-    font-weight: normal;
-  }
+.bg-botao {
+  background-color: var(--cor-4) !important;
+}
 
-  .sidebar-menu-item {
-    list-style: none;
-    padding: 10px;
-    cursor: pointer;
-    color: white;
-    border-left: 4px solid transparent;
-    transition: border-color 0.3s ease;
-  }
+.bg-botao-detalhes {
+  background-color: var(--cor-5) !important;
+}
 
-  .sidebar-menu-item a {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+.bg-botao-hover {
+  background-color: var(--cor-5) !important;
+}
 
-  .sidebar-menu-item:hover,
-  .sidebar-menu-item.active {
-    border-left: 4px solid #FF7A00;
-  }
+.bg-botao-header:hover {
+  background-color: var(--cor-4);
+}
 
-  .main-content {
-    flex-grow: 1;
-    padding: 30px;
-    background-color: var(--cor-1);
-  }
+.bg-texto {
+  background-color: var(--cor-6) !important;
+}
 
-  .main-content h1 {
-    font-size: 24px;
-    color: var(--cor-6);
-  }
+.bg-divisao {
+  margin-top: 1px;
+}
 
-  .header {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0px;
-  }
+.text-principal {
+  color: var(--cor-1) !important;
+}
 
-  .new-report-btn {
-    background-color: var(--cor-4);
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-  }
+.text-secundaria {
+  color: var(--cor-2) !important;
+}
 
-  .search-filter {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
+.text-destaque {
+  color: var(--cor-3) !important;
+}
 
-  .search-filter input {
-    flex: 1;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-  }
+.text-botao {
+  color: var(--cor-4) !important;
+}
 
-  .filter-btn {
-    padding: 10px 20px;
-    background-color: var(--cor-4);
-    border: none;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+.text-botao-hover {
+  color: var(--cor-5) !important;
+}
 
-  .tabs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .tab {
-    padding: 8px 15px;
-    border: none;
-    background-color: #0E3C34;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  .tab.active {
-    background-color: var(--cor-4);
-  }
-
-  .reports {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: var(--cor-1);
-  }
-
-  .report-card {
-    background-color: var(--cor-2);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    position: relative;
-  }
-
-  .report-card h3 {
-    margin-bottom: 10px;
-  }
-
-  .report-card p {
-    margin-bottom: 10px;
-  }
-
-  .report-card span {
-    font-size: 14px;
-    color: var(--cor-1);
-  }
-
-  .report-card .status {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: bold;
-  }
-
-  .in-progress .status {
-    background-color: #facc15;
-    color: #000;
-  }
-
-  .pending .status {
-    background-color: #f97316;
-    color: #fff;
-  }
-
-  .inactive .status {
-    background-color: #94a3b8;
-    color: #fff;
-  }
-
-  .details-btn {
-    margin-top: 10px;
-    padding: 6px 12px;
-    background-color: var(--cor-4);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
+.text-claro {
+  color: var(--cor-6) !important;
+}
