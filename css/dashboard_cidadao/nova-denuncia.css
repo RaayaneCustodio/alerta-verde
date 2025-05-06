@@ -1,3 +1,7 @@
+.voltar:hover {
+  color: var(--cor-4);
+}
+
 .formulario-main{
   background-color: var(--cor-2);
 }
