@@ -96,18 +96,21 @@
           <p class="fs-6 fw-normal mt-2" style="color: var(--cor-7);">Forneça detalhes sobre o problema que deseja relatar.</p>
         </div>
       </section>
-      <section class="formulario-main rounded-2 p-2 text-dark mt-5">
+      <section class="formulario-main rounded-2 text-dark mt-5 px-4 pt-2 pb-4">
+        <div >
+          <h3 class="fw-bold mt-3">Detalhes da Denuncia</h3>
+          <p class="fs-6 mt-2" style="color: var(--cor-8);">Prencha o formulario abaixo com o maximo de detalhes possivel</p>
+        </div>
         <form class="row gap-4">
-          <h3 class=" fw-bold ms-3">Detalhes da Denuncia</h3>
-          <p class="ms-3">Prencha o formulario abaixo com o maximo de detalhes possivel</p>
           <div class="form-group col-12">
-            <label for="titulo" class="form-label fw-bold ms-3">Titulo da Denuncia</label>
-            <input type="text" class="form-control form-control-sm " id="titulo" name="titulo"
+            <label for="titulo" class="form-label fw-bold mt-4">Titulo da Denuncia</label>
+            <input type="text" class="form-control form-control-sm" id="titulo" name="titulo"
               placeholder="Ex: Buraco na rua...">
           </div>
           <div class="form-group col-12 ">
-            <label for="natureza" class="form-label fw-bold ms-3">Categoria:</label>
+            <label for="natureza" class="form-label fw-bold ">Categoria:</label>
             <select class="form-select" id="natureza">
+              <option value="0">Selecionar...</option>
               <option value="1">Qualidade da água</option>
               <option value="2">Poluição do ar</option>
               <option value="3">Desmatamento</option>
@@ -115,11 +118,11 @@
             </select>
           </div>
           <div class="form-group col-12">
-            <label for="descricao" class="form-label fw-bold ms-3">Descrição:</label>
-            <textarea class="form-control" id="descricao" rows="4"></textarea>
+            <label for="descricao" class="form-label fw-bold ">Descrição:</label>
+            <textarea class="form-control" id="descricao" rows="4" placeholder="Forneça uma descrição detalhada do problema."></textarea>
           </div>
           <div class="form-group col-12">
-            <label for="localizacao" class="form-label fw-bold ms-3">Localização</label>
+            <label for="localizacao" class="form-label fw-bold ">Localização</label>
             <div class="d-flex gap-2">
               <input type="text" class="form-control form-control-sm flex-grow-1" id="localizacao" name="localizacao"
                 placeholder="Ex: Avenida ...">
@@ -134,23 +137,27 @@
             </div>
           </div>
           <div class="form-group col-12">
-            <label for="midia" class="form-label fw-bold ms-3">Midias</label>
+            <label for="midia" class="form-label fw-bold ">Midias</label>
             <div class="d-flex gap-2 d-flex justify-content-center gap-5 ">
-              <div class="bg-white rounded-3 d-flex justify-content-center align-items-center" style="width: 100%; max-width: 700px; height: 150px;">
+              <div class="bg-white rounded-3 d-flex flex-column gap-2 justify-content-center align-items-center" style="width: 100%; max-width: 750px; height: 150px;">
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16" id="uploadImagemIcon">
+                <svg class="midia-itens" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16" id="uploadImagemIcon">
                   <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
                   <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
                 </svg>
                 <input type="file" class="form-control form-control-sm" id="imagem" name="imagem" accept="image/*" style="display: none;">
+                <p class="fs-6">Adicionar imagens</p>
+                <p class="fs-6">JPG, PNG, GIF de até 10MB</p>
               </div>
             
-              <div class="bg-white rounded-3 d-flex justify-content-center align-items-center" style="width: 100%; max-width: 700px; height: 150px;">
+              <div class="bg-white rounded-3 d-flex flex-column gap-2 justify-content-center align-items-center" style="width: 100%; max-width: 750px; height: 150px;">
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16" id="uploadVideoIcon">
+                <svg class="midia-itens" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16" id="uploadVideoIcon">
                   <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/>
                 </svg>
                 <input type="file" class="form-control form-control-sm" id="video" name="video" accept="video/*" style="display: none;">
+                <p class="fs-6">Adicionar vídeo</p>
+                <p class="fs-6">MP4, MOV de até 50MB</p>
               </div>
             </div>
            </div>

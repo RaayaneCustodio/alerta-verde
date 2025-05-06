@@ -25,3 +25,7 @@
   background-color: var(--cor-6);
   color: var(--cor-0);
 }
+
+.midia-itens:hover {
+  color: var(--cor-4);
+}

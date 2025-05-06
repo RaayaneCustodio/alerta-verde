@@ -35,8 +35,13 @@
   background-color: var(--cor-5) !important;
 }
 
+.bg-botao-header {
+  border: none;
+}
+
 .bg-botao-header:hover {
   background-color: var(--cor-4);
+  color: var(--cor-6);
 }
 
 .bg-texto {
