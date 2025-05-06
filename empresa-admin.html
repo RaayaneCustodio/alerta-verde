@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Empresas - Administrador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Painel do Administrador</h2>
+        <h3>Administrador</h3>
+        <nav>
+          <ul>
+            <li class="sidebar-menu-item">
+              <a href="dashboard-admin.html">
+                <svg class="icon" data-lucide="file-text"></svg>
+                Denúncias</a
+              >
+            </li>
+            <li class="sidebar-menu-item">
+              <a href="">
+                <svg class="icon" data-lucide="users"></svg>
+                Usuarios</a
+              >
+            </li>
+            <li class="sidebar-menu-item">
+              <a href="">
+                <svg class="icon" data-lucide="building"></svg>
+                Empresas</a
+              >
+            </li>
+            <li class="sidebar-menu-item">
+              <a href="">
+                <svg class="icon" data-lucide="settings"></svg>
+                Configurações</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <h1 class="titulo">Empresas</h1>
+        <p class="descricao">Gerencie usuários do sistema</p>
+        <section class="usuários-admin">
+          <div class="topo-usuarios">
+            <div>
+              <h2>Todos as Empresas</h2>
+              <p>Visualize e gerencie todas as empresas cadastrados</p>
+            </div>
+            <div class="actions">
+              <input type="text" placeholder="🔍 Buscar usuários..." />
+              <button class="filter-btn">Filtrar</button>
+            </div>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th><input type="checkbox" /></th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Tipo</th>
+                <th>Status</th>
+                <th>Data de Cadastro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Ambev</td>
+                <td>joao.silva@example.com</td>
+                <td>Empresa</td>
+                <td><span class="badge active">Ativo</span></td>
+                <td>2023-01-10</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Copel</td>
+                <td>maria.oliveira@example.com</td>
+                <td>Empresa</td>
+                <td><span class="badge active">Ativo</span></td>
+                <td>2023-01-15</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Secretaria de Obras</td>
+                <td>obras@prefeitura.gov.br</td>
+                <td>Órgão Público</td>
+                <td><span class="badge active">Ativo</span></td>
+                <td>2023-01-05</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Carlos Santos</td>
+                <td>carlos.santos@example.com</td>
+                <td>Empresa</td>
+                <td><span class="badge inactive">Inativo</span></td>
+                <td>2023-02-01</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Ana Pereira</td>
+                <td>ana.pereira@example.com</td>
+                <td>Empresa</td>
+                <td><span class="badge blocked">Bloqueado</span></td>
+                <td>2023-02-10</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Secretaria de Meio Ambiente</td>
+                <td>meioambiente@prefeitura.gov.br</td>
+                <td>Órgão Público</td>
+                <td><span class="badge active">Ativo</span></td>
+                <td>2023-01-08</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Empresa</td>
+                <td>empresa@civicwatch.com</td>
+                <td>Empresa</td>
+                <td><span class="badge active">Ativo</span></td>
+                <td>2023-01-01</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="footer">
+            <span>Mostrando 1 a 7 de 100 empresas</span>
+            <div class="pagination">
+              <button class="btn">Anterior</button>
+              <button class="btn">Próximo</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
