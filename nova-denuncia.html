@@ -84,15 +84,15 @@
     <main class="p-4 flex-fill">
       <section class="formulario-main rounded-2 p-2 text-dark">
         <form class="row gap-4">
-          <h3 class=" fw-bold">Detalhes da Denuncia</h3>
-          <p>Prencha o formulario abaixo com o maximo de detalhes possivel</p>
+          <h3 class=" fw-bold ms-3">Detalhes da Denuncia</h3>
+          <p class="ms-3">Prencha o formulario abaixo com o maximo de detalhes possivel</p>
           <div class="form-group col-12">
-            <label for="titulo" class="form-label">Titulo da Denuncia</label>
-            <input type="text" class="form-control form-control-sm" id="titulo" name="titulo"
+            <label for="titulo" class="form-label fw-bold ms-3">Titulo da Denuncia</label>
+            <input type="text" class="form-control form-control-sm " id="titulo" name="titulo"
               placeholder="Ex: Buraco na rua...">
           </div>
           <div class="form-group col-12 ">
-            <label class="" for="natureza" class="form-label">Categoria:</label>
+            <label for="natureza" class="form-label fw-bold ms-3">Categoria:</label>
             <select class="form-select" id="natureza">
               <option value="1">Qualidade da água</option>
               <option value="2">Poluição do ar</option>
@@ -101,18 +101,28 @@
             </select>
           </div>
           <div class="form-group col-12">
-            <label for="descricao" class="form-label">Descrição:</label>
+            <label for="descricao" class="form-label fw-bold ms-3">Descrição:</label>
             <textarea class="form-control" id="descricao" rows="4"></textarea>
           </div>
           <div class="form-group col-12">
-            <label for="localizacao" class="form-label">Localização</label>
-            <input type="text" class="form-control form-control-sm" id="localizacao" name="localizacao"
-              placeholder="Ex: Avenida ...">
+            <label for="localizacao" class="form-label fw-bold ms-3">Localização</label>
+            <div class="d-flex gap-2">
+              <input type="text" class="form-control form-control-sm flex-grow-1" id="localizacao" name="localizacao"
+                placeholder="Ex: Avenida ...">
+              <button type="submit" class="btn-localizacao btn btn-primary d-flex align-items-center gap-2" style="white-space: nowrap;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                  viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+                Localização atual
+              </button>
+            </div>
           </div>
           <div class="form-group col-12">
-            <label for="midia" class="form-label">Midias</label>
-            <div class="d-flex gap-2 d-flex justify-content-between ">
-              <div class="p-4" style="background-color: var(--cor-6);">
+            <label for="midia" class="form-label fw-bold ms-3">Midias</label>
+            <div class="d-flex gap-2 d-flex justify-content-center gap-5 ">
+              <div class="bg-white rounded-3" style="padding: 70px 400px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16" id="uploadImagemIcon">
                   <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
                   <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
@@ -120,16 +130,23 @@
                 <input type="file" class="form-control form-control-sm" id="imagem" name="imagem" accept="image/*" style="display: none;">
               </div>
             
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16" id="uploadVideoIcon">
+              <div class="bg-white rounded-3" style="padding: 70px 400px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16" id="uploadVideoIcon">
                   <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/>
                 </svg>
                 <input type="file" class="form-control form-control-sm" id="video" name="video" accept="video/*" style="display: none;">
               </div>
             </div>
-            <div class="form-group col-12 ">
-          </div>
-            <button type="submit" class="btn btn-primary">Enviar Denúncia</button>
+           </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="submit" class="btn-enviar btn btn-primary w-100 d-flex justify-content-center align-items-center gap-2" style="white-space: nowrap;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send"
+                viewBox="0 0 16 16">
+                <path d="M15.854 7.146a.5.5 0 0 0 0-.707L9.207.5a.5.5 0 0 0-.707.707L13.793 6H2.5a.5.5 0 0 0 0 1h11.293l-5.293 5.293a.5.5 0 0 0 .707.707l6-6z"/>
+              </svg>
+              Enviar Denúncia
+            </button>
+            
           </div>
         </form>
       </section>
